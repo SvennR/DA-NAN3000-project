@@ -1,0 +1,10 @@
+debug.log
+server
+unshare-container/
+TODO
+testing/
+.vscode
+node_modules/
+.DS_Store
+obj
+bin-static

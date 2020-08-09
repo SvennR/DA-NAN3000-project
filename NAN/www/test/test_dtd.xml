@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="group_list.xsl"?>
+<!DOCTYPE GROUPLIST SYSTEM "test.dtd">
+<GROUPLIST>
+<GROUP course="FE-BAC3000">
+    <!-- Dette er en kommentar --> 
+    <purpose>Project based learning</purpose>
+    
+    <member id="001">
+        <name>
+            <fname>Espen</fname> <lname>Lien Pedersen</lname>
+        </name>
+        <role>Document handling</role>
+    </member>
+
+    <member id="002">
+        <name>
+            <fname>Glen</fname> <lname>Nordskog</lname>
+        </name>
+        <role>Quality assurance</role>
+    </member>
+
+    <member id="003">
+        <name>
+            <fname>Svenn</fname> <lname>Rage</lname>
+        </name>
+        <role>Project leader</role>
+    </member>
+</GROUP>
+<GROUP course="DA-NAN3000">
+    <purpose>Network programming</purpose>
+    
+    <member id="001">
+        <name>
+            <fname>Espen</fname> <lname>Lien Pedersen</lname>
+        </name>
+        <role>Coding</role>
+    </member>
+
+    <member id="002">
+        <name>
+            <fname>Glen</fname> <lname>Nordskog</lname>
+        </name>
+        <role>Coding</role>
+    </member>
+
+    <member id="003">
+        <name>
+            <fname>Svenn</fname> <lname>Rage</lname>
+        </name>
+        <role>Coding</role>
+    </member>
+</GROUP>
+<GROUP course="Nope">
+    <purpose>No particular purpose</purpose>
+    <member id="001">
+        <name>
+            <fname>Espen</fname> <lname>Lien Pedersen</lname>
+        </name>
+        <role>Oops</role>
+    </member>
+
+    <member id="002">
+        <name>
+            <fname>Glen</fname> <lname>Nordskog</lname>
+        </name>
+        <role>Oops</role>
+    </member>
+
+    <member id="003">
+        <name>
+            <fname>Svenn</fname> <lname>Rage</lname>
+        </name>
+        <role>Oops</role>
+    </member>
+</GROUP>
+</GROUPLIST>

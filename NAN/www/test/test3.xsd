@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- REF VERSION (ALSO PRETTY CLEAN!) -->
+
+<!-- SIMPLE ELEMENT DEFINITIONS -->
+<xs:element name="fname"    type="xs:string"/>
+<xs:element name="lname"    type="xs:string"/>
+<xs:element name="purpose"  type="xs:string"/>
+<xs:element name="role"     type="xs:string"/>
+
+<!-- ATTRIBUTE DEFINITIONS -->
+<xs:attribute name="course" type="xs:string"/>
+<xs:attribute name="id"     type="xs:string"/>
+
+<!-- COMPLEX ELEMENT DEFINITIONS -->
+<xs:element name="GROUPLIST">
+<xs:complexType>
+    <xs:sequence>
+        <xs:element ref="GROUP" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="GROUP">
+<xs:complexType>
+    <xs:sequence>
+        <xs:element ref="purpose"/>
+        <xs:element ref="member" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute ref="course" use="required"/>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="member">
+<xs:complexType>
+    <xs:sequence>    
+        <xs:element ref="name"/>
+        <xs:element ref="role"/>
+    </xs:sequence>
+    <xs:attribute ref="id" use="required"/>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="name">
+<xs:complexType>
+    <xs:sequence>
+        <xs:element ref="fname"/>
+        <xs:element ref="lname"/>
+    </xs:sequence>
+</xs:complexType>
+</xs:element>
+
+</xs:schema>

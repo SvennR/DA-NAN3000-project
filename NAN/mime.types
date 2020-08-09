@@ -1,0 +1,38 @@
+# ATT: This is a reduced mime.types for use in a DA-NAN3000 project
+###############################################################################
+#
+#  MIME media types and the extensions that represent them.
+#
+#  The format of this file is a media type on the left and zero or more
+#  filename extensions on the right.  Programs using this file will map
+#  files ending with those extensions to the associated type.
+#
+#  This file is part of the "mime-support" package.  Please report a bug using
+#  the "reportbug" command of the "reportbug" package if you would like new
+#  types or extensions to be added.
+#
+#  The reason that all types are managed by the mime-support package instead
+#  allowing individual packages to install types in much the same way as they
+#  add entries in to the mailcap file is so these types can be referenced by
+#  other programs (such as a web server) even if the specific support package
+#  for that type is not installed.
+#
+#  Users can add their own types if they wish by creating a ".mime.types"
+#  file in their home directory.  Definitions included there will take
+#  precedence over those listed here.
+#
+###############################################################################
+
+application/x-javascript				js
+application/json				json
+application/xml					xml xsd
+application/xslt+xml				xsl xslt
+
+image/png					png
+image/svg+xml					svg svgz
+
+text/css					css
+text/html					html htm shtml
+text/plain					asc txt text pot brf srt dtd
+
+image/x-icon					ico

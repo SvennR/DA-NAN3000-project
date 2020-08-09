@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- CUSTOM TYPE VERSION (BETTER!) -->
+
+<xs:element name="GROUPLIST">
+<xs:complexType>
+    <xs:sequence>
+        <xs:element name="GROUP" type="grouptype" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="grouptype">
+    <xs:sequence>
+        <xs:element name="purpose" type="xs:string"/>
+        <xs:element name="member" type="membertype" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="course" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="membertype">
+    <xs:sequence>    
+        <xs:element name="name" type="nametype"/>
+        <xs:element name="role" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="nametype">
+    <xs:sequence>
+        <xs:element name="fname" type="xs:string"/>
+        <xs:element name="lname" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

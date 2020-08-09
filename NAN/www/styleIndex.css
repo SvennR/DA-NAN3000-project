@@ -1,0 +1,58 @@
+body{
+    background-image: url("https://wallpaperplay.com/walls/full/c/e/1/119076.jpg")
+}
+
+#showcase{
+    text-align: center;
+}
+
+#section-a {
+	
+	color: #333;
+	padding-bottom: 2em; 
+}
+
+.content-wrap{
+    text-align: center;
+}
+
+#section-b {
+	padding: 2em 1em 1em;
+}
+
+#section-c{
+	padding: 2em 1em 1em;
+	text-align: center;
+}
+
+#section-c ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#section-c li {
+	margin-bottom: 1em;
+	color: #333;
+}
+
+.card-content {
+	padding-bottom: 1.5em;
+}
+
+.content-wrap, 
+	#section-c ul {
+		grid-column: 2/4;
+	}
+
+#section-c ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+#section-c li {
+	width: 31%
+}
+
+
+

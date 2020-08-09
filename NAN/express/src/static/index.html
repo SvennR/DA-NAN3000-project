@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dikt samling</title>
+    <link rel="icon" type="image/png" href="images/icons/icon-512x512.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <form id='welcomeId'>
+        <h1 id="w">Velkommen</h1>
+    </form>
+
+    <form id=loginForm>
+        <h2>Logg inn for å bruke alle funksjoner</h2>
+        <input type="email" id="usrn" name="email" placeholder="email"></input>
+        <input type="password" id="passw" name="password" placeholder="password"></input>
+        <button id="login-button" type="button">Login</button>
+    </form>
+
+    <div id="info">
+        <button id=logout-button type="button">Logout</button>
+    </div>
+
+
+    <form id="buttongroup">
+        <p>Velg id fra listen, eller hent alle: </p>
+        <button id=updateList type="button">Oppdater listen</button>
+        <select name="selectId" id="poem-list"> </select>
+        <button id="get-poem" type="button"> Hent</button>
+        <button id="get-all" type="button">Hent alle</button> </p>
+    </form>
+
+    <form id="addForm"> </form>
+    <form id="deleteBtnForm"></form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Dikt</th>
+                <th>Hendelser</th>
+            </tr>
+        </thead>
+        <tbody id="fillIn"> </tbody>
+    </table>
+
+    <script src="app.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Milestone 4 Progressive Web Application",
+  "short_name": "MP4PWA",
+  "theme_color": "#91deaa",
+  "background_color": "rgba(255,255,255,0)",
+  "display": "fullscreen",
+  "Scope": "/",
+  "start_url": "index.html",
+  "icons": [
+    {
+      "src": "/static/images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

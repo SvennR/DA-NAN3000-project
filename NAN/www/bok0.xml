@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<bokliste>
+  <bok>
+    <bokid>02</bokid>
+    <tittel>Notater til DA-ODA2000</tittel>
+    <forfatterId>12345</forfatterId>
+  </bok>
+  <bok>
+    <bokid>01</bokid>
+    <tittel>Notater til DA-NAN3000</tittel>
+    <forfatterId>12345</forfatterId>
+  </bok>
+
+</bokliste>

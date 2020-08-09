@@ -1,0 +1,18 @@
+body {
+    background-color: lightskyblue;
+    display:          table;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    font-size: 20px;
+    text-align: center;
+}

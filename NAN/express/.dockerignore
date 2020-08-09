@@ -1,0 +1,15 @@
+# ignore .git and .cache folders
+.git
+.cache
+devspace.yaml
+node_modules/
+npm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+pids
+*.pid*
+*.seed*
+*.pid.lock*
+Dockerfile
+**/.DS_Store
+.dockerignore
+arm.Dockerfile

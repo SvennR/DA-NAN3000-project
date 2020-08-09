@@ -1,0 +1,40 @@
+<!-- XML BUILDING BLOCKS: -->
+<!-- ELEMENTS, ATTRIBUTES, ENTITIES, PCDATA, CDATA -->
+
+<!-- ELEMENT RULES -->
+<!-- comma separated means they must be ordered -->
+<!-- space separated means unnordered -->
+<!-- PUNCTUATION: -->
+<!--    *: zero or more occurrences -->
+<!--    ?: zero or exactly one occurence -->
+<!--    +: one or more occurrences -->
+<!--    no punctuation: must occur exactly once! -->
+<!-- PCDATA is "parseable character data" -->
+<!ELEMENT GROUPLIST (GROUP)*>
+<!ELEMENT GROUP (purpose, member*)>
+<!ELEMENT purpose (#PCDATA)>
+<!ELEMENT member (name, role)>
+<!ELEMENT role (#PCDATA)>
+<!ELEMENT name (fname, lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+
+<!-- ATTRIBUTE RULES -->
+<!-- ATTLIST element-name attr-name attr-type attr-value -->
+<!-- GROUP is the element -->
+<!-- course is the attribute -->
+<!-- CDATA type is character data ("string")-->
+<!-- more types:    ID, IDREF, IDREFS -->
+<!--                ENTITY, ENTITIES -->
+<!--                NMTOKEN, NMTOKENS -->
+<!--                NOTATION -->
+<!--                "List of names" (ENUMERATED TYPES) -->
+<!-- #IMPLIED is optional -->
+<!-- #REQUIRED is mandatory -->
+<!-- #FIXED means you cant change from default value -->
+<!ATTLIST GROUP course CDATA #REQUIRED>
+<!-- More examples: -->
+<!--ATTLIST GROUP course CDATA "some default value"-->
+<!-- gender must be from a list, has default value-->
+<!--ATTLIST SEX gender (M | F) "M" -->
+<!ATTLIST member id CDATA #REQUIRED>
